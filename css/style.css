@@ -114,7 +114,7 @@ body {
 
 .wrap {
   padding: 10rem 2rem 0rem;
-  background-image: url('/assets/images/bg-header-mobile.png');
+  background-image: url(/assets/images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

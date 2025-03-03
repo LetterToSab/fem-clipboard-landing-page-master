@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+  /* colors */
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --white: hsl(0, 0%, 100%);
+
+  /* font size */
+  --fs-body: 1.8rem;
+}
+
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--Dark-Grayish-Blue);
+}
+
+p {
+  color: var(--Grayish-Blue);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  color: var(--Dark-Grayish-Blue);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* general styling */
+
+body {
+  margin: 0;
+  font-family: 'Bai Jamjuree';
+  font-size: var(--fs-body);
+  font-weight: 400;
+}
+
+/* styling the buttons */
+
+.cta-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+}
+
+.cta-btn a {
+  display: block;
+  width: 75%;
+  padding-block: 1.2rem;
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 1.8rem;
+  transition: all 150ms ease-in-out;
+}
+
+.cta-btn a:hover {
+  cursor: pointer;
+  opacity: .8;
+}
+
+.ios {
+
+  --shadow: rgba(38, 186, 164, 0.3);
+
+  background-color: var(--Strong-Cyan);
+  box-shadow: 0px 5px 5px var(--shadow);
+}
+
+.mac {
+
+  --box-shadow: rgba(0, 0, 0, 0.15);
+
+  background-color: var(--Light-Blue);
+  box-shadow: 0px 5px 10px var(--box-shadow);
+}
+
+
+/* layout styling */
+
+.wrap {
+  padding: 10rem 2rem 0rem;
+  background-image: url('/assets/images/bg-header-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 0rem 2rem 2rem;
+}
+
+
+/* styling the header */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem 5rem;
+}
+
+.header__logo img {
+  width: 100px;
+  margin: auto;
+}
+
+/* styling the hero section */
+
+.hero__text {
+  padding-block: 0rem 3em;
+  text-align: center;
+}
+
+h1 {
+  max-width: 15ch;
+  margin: auto;
+
+}
+
+.hero__text p {
+  font-size: 1.4rem;
+  max-width: 30ch;
+  margin: auto;
+  padding-block: 1.7rem 4rem;
+}
+
+/* styling the keep track section */
+
+.keep-track {
+  width: 100%;
+  padding-block: 8rem;
+  background-color: var(--white);
+}
+
+.keep-track__title {
+  text-align: center;
+  max-width: 15ch;
+  margin: auto;
+}
+
+.keep-track__disc {
+  text-align: center;
+  max-width: 30ch;
+  margin: auto;
+  padding-block: 2rem 3rem;
+}
+
+.flex-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h3 {
+  padding-top: 6rem;
+}
+
+
+/* styling the access clipboard section */
+
+.access {
+  margin-top: 4em;
+  text-align: center;
+}
+
+.access__desc {
+  font-size: 1.7rem;
+  max-width: 33ch;
+  margin: auto;
+  padding-block: 1em 2.5em;
+}
+
+.access__img {
+  width: 330px;
+  margin: auto;
+}
+
+.access__img img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* styling the supercharge your workflow section */
+
+
+.workflow {
+  margin-top: 5em;
+}
+
+.workflow__content {
+  text-align: center;
+}
+
+.workflow__title {
+  max-width: 15ch;
+  margin: auto;
+}
+
+.workflow__desc {
+  padding-top: .7em;
+  max-width: 25ch;
+  margin: auto;
+}
+
+
+.flex {
+  margin-block: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-item {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-item:nth-child(2),
+.flex-item:nth-child(3) {
+  margin-top: 3em
+}
+
+.flex-item__title {
+  padding-block: 4rem 2rem;
+}
+
+.flex-item__text {
+  font-size: 1.6rem;
+  max-width: 31ch;
+  margin: auto;
+}
+
+.images {
+  padding-bottom: 5rem;
+}
+
+.flex-image {
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+}
+
+.flex-image img {
+  padding-top: 8rem;
+  width: 130px;
+}
+
+
+/* styling the clipboard for ios and mac os section */
+
+.clipboard {
+  margin-block: 7rem;
+  text-align: center;
+}
+
+.clipboard__title {
+  max-width: 18ch;
+  margin: auto;
+}
+
+.clipboard__desc {
+  font-size: 1.6rem;
+  max-width: 29.5ch;
+  margin: auto;
+  padding-block: 2rem 4rem;
+}
+
+
+/* styling the footer */
+
+
+footer {
+  padding-block: 5rem 5rem;
+  background-color: #f5f6f8;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.footer__logo {
+  width: 60px;
+  margin: auto;
+  padding-bottom: 3.5rem;
+}
+
+.footer__logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 4rem;
+  white-space: nowrap;
+
+}
+
+.social-links a {
+  display: inline-block;
+}
+
+.social-links__list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.social-links__list i {
+  font-size: 27px;
+  color: var(--Dark-Grayish-Blue);
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.attribution a {
+  color: var(--Dark-Grayish-Blue);
+}
+
+
+
+/* the media quaries for the project */
+
+
+/* the media quaries for the buttons */
+
+@media(width>=430px) {
+  .cta-btn a {
+    width: 75%;
+    max-width: 230px;
+  }
+}
+
+@media(width>=600px) {
+  .cta-btn {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+
+}
+
+@media(width>=1200px) {
+  .cta-btn a {
+    max-width: 250px;
+    padding-block: 1.35rem;
+  }
+
+}
+
+/* the media quaries for the layout */
+
+@media(width>=1100px) {
+  .section__wrapper {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+
+/* the media quaries for hero section */
+
+@media(width>=600px) {
+  h1 {
+    max-width: 40ch;
+    font-size: 3.6rem;
+  }
+
+  .hero__text p {
+    font-size: 1.8rem;
+    max-width: 50ch;
+    padding-block: 1.7rem 5rem;
+  }
+}
+
+/* the media quaries for the keep track section  */
+
+@media (width>=375px) {
+  .keep-track__img {
+    width: 330px;
+  }
+
+  .keep-track__img img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+
+@media(width>=600px) {
+
+  .keep-track__disc {
+    font-size: 1.8rem;
+    max-width: 59ch;
+
+  }
+
+}
+
+@media(width>=600px) {
+  h2.keep-track__title {
+    max-width: 20ch;
+  }
+}
+
+@media(width>=800px) {
+  h2.keep-track__title {
+    font-size: 3.3rem;
+  }
+}
+
+
+
+@media(width>=1200px) {
+  .flex-group {
+    flex-direction: row;
+    max-width: 100%;
+  }
+
+  .keep-track__img {
+    width: 700px;
+    position: relative;
+  }
+
+  .keep-track__img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -37%);
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  h3 {
+    padding-top: 2rem;
+    text-align: left;
+    font-size: 2.3rem;
+  }
+
+  .keep-track__text {
+    text-align: left;
+    max-width: 50ch;
+  }
+
+  .flex-group2 {
+    padding-top: 12rem;
+  }
+
+
+}
+
+@media(width>=1600px){
+  .keep-track__img img {
+    left:48% ;
+    transform: translate(-70%, -37%);
+    }
+
+  .flex-group2{
+   padding-right: 10rem ;
+  }  
+}
+
+
+/* the media quaries for the access clipboard section */
+
+@media(width>=600px) {
+  .access__desc {
+    font-size: 1.8rem;
+    max-width: 58ch;
+    margin: auto;
+    padding-block: 1em 4em;
+  }
+
+  .access__img {
+    width: 500px;
+    margin: auto;
+  }
+
+  .access__img img {
+    max-width: 100%;
+    height: auto;
+
+  }
+}
+
+@media(width>=900px) {
+  .access__title {
+    font-size: 3.3rem;
+  }
+
+  .access__img {
+    width: 670px;
+    margin: auto;
+  }
+}
+
+/* the media quaries for the supercharge your workflow section  */
+
+@media(width>=600px) {
+  .flex-image {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+ .workflow__title {
+    max-width: 20ch;
+    padding-bottom: 1rem;
+    margin: auto;
+}
+
+.workflow__desc {
+  padding-top: .7em;
+  max-width: 40ch;
+  margin: auto;
+}
+  
+}
+
+
+@media(width>=900px) {
+  .workflow__title {
+    font-size: 3.5rem;
+    max-width: 20ch;
+    padding-bottom: 1rem;
+    margin: auto;
+  }
+
+
+  .flex {
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .flex-item {
+    align-items: center;
+  }
+
+  .flex-item {
+    align-items: center;
+  }
+
+  .flex-item:nth-child(2),
+  .flex-item:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .text__title,
+  .eye__title {
+    padding-top: 5rem;
+  }
+
+  .flex-item__text {
+    line-height: 2;
+    max-width: 34ch;
+    margin: auto;
+  }
+
+  .flex-image {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media(width>=1100px) {
+  .flex-image {
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 90%;
+    margin: auto;
+  }
+
+}
+
+
+/* the media quaries for the clipboard for ios and mas os section */
+
+@media(width>=600px) {
+  .clipboard__title {
+    font-size: 3rem;
+    max-width: 25ch;
+    margin: auto;
+  }
+
+  .clipboard__desc {
+    max-width: 60ch;
+    line-height: 2;
+    padding-bottom: 6rem;
+  }
+}
+
+/* the media quaries for the footer */
+
+@media (width >=768px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media (width >=900px) {
+  footer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer__logo {
+    width: 100x;
+  }
+
+  .footer__logo img {
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  footer ul li{
+    text-align: left;
+  }
+
+  .social-links__list{
+    padding-top: 0;
+    column-gap: 2rem;
+  }
+
+}
